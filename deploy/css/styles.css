@@ -457,3 +457,115 @@ header > div aside a {
 /* =============
     Footer
 ============= */
+#hero {
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 1440px) {
+  #hero {
+    display: grid;
+    grid-template-areas: ". hero .";
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#hero > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-image: url("../img/hero_image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+@media (min-width: 1440px) {
+  #hero > div {
+    grid-area: hero;
+  }
+}
+#hero > div #hero-content {
+  color: #fff;
+  text-align: center;
+}
+#hero > div #hero-content h1 {
+  font-size: 6.25rem;
+  font-weight: 400;
+  line-height: 137px;
+  font-family: "DM Serif Display", serif;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  #hero > div #hero-content h1 {
+    font-size: 5.625rem;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content h1 {
+    font-size: 6.25rem;
+  }
+}
+#hero > div #hero-content h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 40px;
+  font-family: "Raleway", sans-serif;
+  margin-top: -25px;
+}
+@media (min-width: 768px) {
+  #hero > div #hero-content h2 {
+    font-size: 2.5rem;
+    margin-top: -20px;
+  }
+}
+@media (min-width: 1024px) {
+  #hero > div #hero-content h2 {
+    font-size: 2.5rem;
+    margin-top: -15px;
+  }
+}
+
+#content {
+  display: grid;
+  grid-template-columns: auto 90% auto;
+  grid-template-areas: ". content .";
+  padding: 64px 0;
+}
+@media (min-width: 768px) {
+  #content {
+    padding: 100px 0;
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #content {
+    padding: 128px 0;
+    grid-template-columns: auto 80% auto;
+  }
+}
+@media (min-width: 1440px) {
+  #content {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#content > div {
+  grid-area: content;
+}
+@media (min-width: 1024px) {
+  #content > div {
+    padding: 0 30%;
+  }
+}
+#content > div h1 {
+  font-size: 2.25rem;
+  margin-bottom: 16px;
+  text-align: center;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+}
+#content > div p {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: justify;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}

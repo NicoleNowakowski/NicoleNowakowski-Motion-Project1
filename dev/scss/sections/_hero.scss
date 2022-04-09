@@ -1,0 +1,68 @@
+#hero{
+    height: 90vh;
+    width: 100%;
+    overflow: hidden;
+
+    @include xl{
+        display: grid;
+        grid-template-areas: ". hero .";
+        grid-template-columns: auto 1440px auto;
+    }
+    >div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-image:url("../img/hero_image.jpg") ;
+        background-position:center ;
+        background-size: cover;
+
+        @include xl{
+            grid-area: hero;
+        }
+        
+        #hero-content{
+            color: $white;
+            text-align: center;
+
+            h1{
+font-size: rem-calc(100);
+font-weight: 400;
+line-height: 137px;
+font-family: 'DM Serif Display', serif;
+margin-bottom: 16px;
+
+@include md{
+    font-size: rem-calc(90);
+}
+
+@include lg{
+    font-size: rem-calc(100);
+}
+
+
+
+            }
+            h2{
+                font-size: rem-calc(32);
+font-weight: 500;
+line-height: 40px;
+font-family: 'Raleway', sans-serif;
+margin-top: -25px;
+
+@include md{
+    font-size: rem-calc(40);
+    margin-top: -20px;
+
+}
+
+@include lg{
+    font-size: rem-calc(40);
+    margin-top: -15px;
+
+}
+
+            }
+        }
+    }
+}
