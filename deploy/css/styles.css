@@ -365,19 +365,8 @@ ul li {
   list-style: none;
 }
 
-.container-grid {
-  display: grid;
-  grid-template-areas: ". grid-content .";
-  grid-template-columns: 15px auto 15px;
-  height: 100vh;
-}
-@media (min-width: 1200px) {
-  .container-grid {
-    grid-template-columns: auto 1200px auto;
-  }
-}
-.container-grid > div {
-  grid-area: grid-content;
+a {
+  text-decoration: none;
 }
 
 /* =============
@@ -421,9 +410,50 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav {
+  height: 100%;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+nav ul li {
+  margin-left: 4vw;
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "Raleway", sans-serif;
+  color: #3F1911;
+  transition: 0.25s;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: #CA8981;
+}
+
 /* =============
     Header
 ============= */
+header {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+  z-index: 100;
+}
+header > div {
+  display: grid;
+  grid-template-columns: 20% auto;
+  padding: 8px 16px;
+}
+header > div aside a {
+  display: inline-block;
+  width: 64px;
+  height: 62px;
+}
+
 /* =============
     Footer
 ============= */
