@@ -1,19 +1,21 @@
 /* =============
     Header
 ============= */
-header{
-position: fixed;
-background-color: $cream;
-width: 100%;
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
-z-index: 100;
-    >div{
+header {
+    position: fixed;
+    background-color: $cream;
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+    z-index: 100;
+
+    >div {
         display: grid;
         grid-template-columns: 20% auto;
         padding: 8px 16px;
-        aside{
 
-            a{
+        aside {
+
+            a {
                 display: inline-block;
                 width: 64px;
                 height: 62px;
