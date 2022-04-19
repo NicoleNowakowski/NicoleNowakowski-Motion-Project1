@@ -491,7 +491,7 @@ header > div aside a {
   text-align: center;
 }
 #hero > div article #hero-content h1 {
-  font-size: 6.25rem;
+  font-size: 5.625rem;
   font-weight: 400;
   line-height: 137px;
   font-family: "DM Serif Display", serif;
@@ -499,10 +499,10 @@ header > div aside a {
 }
 @media (min-width: 768px) {
   #hero > div article #hero-content h1 {
-    font-size: 5.625rem;
+    font-size: 6.25rem;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #hero > div article #hero-content h1 {
     font-size: 6.25rem;
   }
@@ -514,13 +514,13 @@ header > div aside a {
   font-family: "Raleway", sans-serif;
   margin-top: -25px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #hero > div article #hero-content h2 {
     font-size: 2.5rem;
     margin-top: -20px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   #hero > div article #hero-content h2 {
     font-size: 2.5rem;
     margin-top: -15px;

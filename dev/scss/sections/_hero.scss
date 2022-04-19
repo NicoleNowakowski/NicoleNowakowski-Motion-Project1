@@ -32,17 +32,17 @@
                 text-align: center;
 
                 h1 {
-                    font-size: rem-calc(100);
+                    font-size: rem-calc(90);
                     font-weight: 400;
                     line-height: 137px;
                     font-family: 'DM Serif Display', serif;
                     margin-bottom: 16px;
 
                     @include md {
-                        font-size: rem-calc(90);
+                        font-size: rem-calc(100);
                     }
 
-                    @include lg {
+                    @include md {
                         font-size: rem-calc(100);
                     }
 
@@ -57,13 +57,13 @@
                     font-family: 'Raleway', sans-serif;
                     margin-top: -25px;
 
-                    @include md {
+                    @include lg {
                         font-size: rem-calc(40);
                         margin-top: -20px;
 
                     }
 
-                    @include lg {
+                    @include md {
                         font-size: rem-calc(40);
                         margin-top: -15px;
 
